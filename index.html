@@ -2,110 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Nuestra Galaxia</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: radial-gradient(ellipse at center, #222 0%, #05021a 100%);
-      color: #fff;
-      font-family: 'Quicksand', Arial, sans-serif;
-      min-height: 100vh;
-      margin: 0;
-      overflow-x: hidden;
-    }
-    .galaxy {
-      position: relative;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .star {
-      position: absolute;
-      background: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      animation: twinkle 2s infinite alternate;
-    }
-    @keyframes twinkle {
-      to { opacity: 0.3; }
-    }
-    /* Palabras flotando */
-    .floating-word {
-      position: absolute;
-      font-size: 1.1rem;
-      color: #f5dfff;
-      text-shadow: 0 0 8px #a86cff, 0 0 18px #fff, 0 0 3px #00ffee;
-      animation: float 8s ease-in-out infinite alternate;
-      white-space: pre;
-    }
-    @keyframes float {
-      0% { transform: translateY(0);}
-      100% { transform: translateY(-30px);}
-    }
-    /* Fotos de planetas */
-    .foto {
-      position: absolute;
-      border-radius: 50%;
-      border: 3px solid #fff4;
-      box-shadow: 0 0 30px 5px #a86cff88, 0 0 80px 10px #fff1;
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-    }
-    /* Mensaje principal */
-    .mensaje {
-      position: absolute;
-      bottom: 40px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: rgba(30,16,60,0.75);
-      border-radius: 20px;
-      padding: 20px 40px;
-      font-size: 1.4rem;
-      color: #ffe9ff;
-      box-shadow: 0 0 16px #a86cff55;
-      text-align: center;
-      max-width: 80vw;
-    }
-  </style>
+  <title>Galaxia Lili</title>
 </head>
 <body>
-  <div class="galaxy" id="galaxy">
-   
-    <!-- Fotos -->
-    <img src="foto1.jpg" alt=" 1" class="foto" style="top: 20%; left: 15%;">
-    <img src="foto2.jpg" alt=" 2" class="foto" style="top: 60%; left: 70%;">
-    <img src="foto3.jpg" alt=" 3" class="foto" style="top: 35%; left: 60%;">
-    <img src="foto4.jpg" alt=" 4" class="foto" style="top: 25%; left: 80%;">
-    <img src="foto5,jpg.jpeg" alt=" 5" class="foto" style="top: 45%; left: 25%;">
-    <img src="foto6.jpg" alt=" 6" class="foto" style="top: 25%; left: 45%;">
-    <!-- Palabras flotando -->
-    <div class="floating-word" style="top: 10%; left: 50%;">Nuestro universo</div>
-    <div class="floating-word" style="top: 50%; left: 30%;">Te amo hasta las estrellas</div>
-    <div class="floating-word" style="top: 75%; left: 60%;">Siempre juntos</div>
-    <div class="floating-word" style="top: 35%; left: 75%;">Nuestro amor es infinito</div>
-    <div class="floating-word" style="top: 65%; left: 15%;">Contigo todo brilla</div>
-    <div class="floating-word" style="top: 25%; left: 20%;">Como snoopy y fifi</div>
-    <!-- Mensaje final -->
-    <div class="mensaje">
-      Mi amor, cada momento contigo es una estrella nueva en mi galaxia. <br>
-      Gracias por hacer mi universo tan especial. <br><br>
-      <span style="font-size: 1.1rem;">Te quiero mucho mi ñiña.</span>
-    </div>
-  </div>
-  <script>
-    //estrellas 
-    const galaxy = document.getElementById('galaxy');
-    for (let i = 0; i < 120; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.width = `${Math.random()*2+1}px`;
-      star.style.height = star.style.width;
-      star.style.top = `${Math.random()*100}%`;
-      star.style.left = `${Math.random()*100}%`;
-      star.style.opacity = Math.random() * 0.8 + 0.2;
-      galaxy.appendChild(star);
-    }
-  </script>
+  <h1>Galaxia Lili</h1>
+  <img src="foto1.jpg" alt="Foto 1">
+  <img src="foto2.jpg" alt="Foto 2">
+  <img src="foto3.jpg" alt="Foto 3">
+  <img src="foto4.jpg" alt="Foto 4">
+  <img src="foto5.jpg.jpeg" alt="Foto 5">
+  <img src="foto6.jpg" alt="Foto 6">
 </body>
 </html>
