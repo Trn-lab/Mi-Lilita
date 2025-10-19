@@ -1,2 +1,0 @@
-# Mi-Lilita
-galaxia lili
