@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestra Galaxia</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -67,6 +68,27 @@
       text-align: center;
       max-width: 80vw;
     }
+    /* Responsive para celular */
+    @media (max-width: 768px) {
+      .floating-word {
+        font-size: 0.8rem;
+        white-space: normal;
+        max-width: 150px;
+      }
+      .foto {
+        width: 100px;
+        height: 100px;
+      }
+      .mensaje {
+        bottom: 20px;
+        padding: 15px 20px;
+        font-size: 1rem;
+        max-width: 90vw;
+      }
+      .mensaje span {
+        font-size: 0.9rem !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -93,6 +115,7 @@
       <span style="font-size: 1.1rem;">Te quiero mucho mi ñiña.</span>
     </div>
   </div>
+  
   <script>
     //estrellas 
     const galaxy = document.getElementById('galaxy');
